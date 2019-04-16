@@ -1,20 +1,19 @@
 ---
+  # ansible-playbook playbook-t570.yml -i /etc/ansible/hosts
 
-- name:
+  name: Directory structure
   hosts: localhost
   gather_facts: no
   
   tasks:
-
-    - name: Directory structure
-      file:
-        path: /code
-        state: directory
-        mode: 0755
-      
-      #   path: /inbox
-      #   state: directory
-      #   mode: 0755
+  - file:
+      path: /code
+      state: directory
+      mode: 0755
+  - file:  
+      path: /inbox
+      state: directory
+      mode: 0755
       # file:
       #   path: /repo
       #   state: directory

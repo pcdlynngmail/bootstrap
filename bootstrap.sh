@@ -30,7 +30,7 @@ fi
 echo "######## Cat hosts file"
 cat /etc/ansible/hosts
 echo "######## Get bootstrap playbook"
-wget -O - https://raw.githubusercontent.com/pcdlynn/bootstrap/master/playbook-t570.yml
+wget -O - https://raw.githubusercontent.com/pcdlynn/bootstrap/master/playbook-t570.yml --output-document=/home/lynn/dev-prov/playbook-t570.yml
 
 # cd $HOME/"$BOOTSTRAPDIR"
 # read -p "Press [Enter] key to start deploying..."
